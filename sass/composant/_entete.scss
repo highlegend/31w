@@ -1,32 +1,33 @@
-.menu-entete-container {
+ .menu-entete-container {
   .menu {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     .menu-item {
-      margin: 0 15px;
+      margin-right: 20px;
+      padding-right: 10px;
 
       a {
-        color: #333;
         text-decoration: none;
+        color: #333;
         font-size: 16px;
         font-weight: bold;
         text-transform: uppercase;
 
         &:hover {
           color: #999;
-          text-decoration: underline;
         }
+      }
+
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
-}
-
+} 
 
   /* .menu-entete-container {
 
-
+ **** MENU DU PROF ****
 
   .menu { //ul
       display: flex;
