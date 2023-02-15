@@ -8,3 +8,5 @@
 - Créer un minimum de 10 commits
 - Déployer le site local vers un serveur distant
 - ajouter un menu 
+
+- Theme URI: https://github.com/highlegend/31w
