@@ -1,17 +1,17 @@
 @charset "UTF-8";
 /*
-Theme Name: 31w Alcatraz
-Theme URI: https://github.com/highlegend/31w
-Author: Said Mehdi
-Author URI: https://aecweb2.sg-host.com/
-Description: Introduction à la création d'un thème Wordpress
+Theme Name: 31w Eddy Martin
+Theme URI: https://github.com/eddytuto
+Author: Eddy Martin
+Author URI: https://eddytuto.ca
+Description: Introductin à la création d'un thème Wordpress
 Version: 1.0
 Requires at least: 6.1.1
 Tested up to: 5.4
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 31w-said-mehdi
+Text Domain: 31w-eddy-martin
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -341,6 +341,7 @@ html {
 /* ------------------COMPOSANT */
 .menu-entete-container .menu {
   display: flex;
+  list-style: none;
 }
 .menu-entete-container .menu .menu-item {
   margin-right: 20px;
