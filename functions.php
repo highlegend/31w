@@ -1,5 +1,5 @@
 <?php
-// Enfiler la feuille de style
+// Enfiler la feuille de style 
 function ajouter_styles() {
     wp_enqueue_style('31w-style-principal', // id de la feuille de style
                 get_template_directory_uri() . '/style.css', // adresse url de la feuille de style
