@@ -16,7 +16,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 body {
-  background-color: rgb(220, 238, 245);
+  background-color: beige;
 }
 
 /* ------------------NORMALIZE */
@@ -339,6 +339,64 @@ html {
 }
 
 /* ------------------COMPOSANT */
+.logommenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-entete-container {
+  /* La classe pour englober tout le menu de navigation */
+}
+.menu-entete-container .menu {
+  display: flex;
+  list-style: none; /* Supprime le style de liste pour les éléments .menu */
+}
+.menu-entete-container .menu .menu-item {
+  /* La classe pour les éléments individuels de la liste de navigation */
+  margin-right: 20px;
+  padding-right: 10px;
+}
+.menu-entete-container .menu .menu-item a {
+  text-decoration: none; /* Supprime la décoration de soulignement de lien */
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu-entete-container .menu .menu-item a:hover {
+  color: #999; /* Applique un style de survol pour les liens */
+}
+.menu-entete-container .menu .menu-item:last-child {
+  margin-right: 0; /* Supprime la marge à droite pour le dernier élément de la liste de navigation */
+}
+
+/* .menu-entete-container {
+
+ **** MENU DU PROF ****
+
+  .menu { //ul
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      list-style: none;
+
+      .menu-item{ //li
+
+          a{
+            padding: 3px 5px;
+            color: #555;
+          }
+          a:hover{
+            color: greenyellow;
+          }
+
+      }
+
+  }
+}
+
+ */
 .logommenu {
   display: flex;
   justify-content: space-between;
