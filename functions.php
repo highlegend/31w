@@ -10,12 +10,10 @@ add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
 
 
 add_theme_support( 'html5', 
-            array( 'search-form', 
-                    'comment-form', 
-                    'comment-list', 
-                    'gallery', 
-                    'caption' 
-                    ) );
+                    array( 'search-form', 
+                            'gallery', 
+                            'caption' 
+                            ) );
 
 add_theme_support( 'title-tag' );
 

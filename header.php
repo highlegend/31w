@@ -8,18 +8,19 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <header>
+    <header>  
+        <?php the_custom_logo(); ?>
         <?php wp_nav_menu(array(
         'menu' =>'entete',
         'container' => 'nav'
         ));?>
 
-        <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1> <!-- H1 avec un lient a l'inter -->
+        <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1> <!-- H1 avec un lien a l'inter -->
         <h1><?php bloginfo('name'); ?></h1> 
         <h2><?php bloginfo('description'); ?></h2>
     </header>
-    
 
+    
 
 
 
