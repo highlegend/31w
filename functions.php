@@ -43,10 +43,13 @@ add_action( 'after_setup_theme', 'enregistrement_des_menus', 0 );
  * @param WP_query  $query la requête principal de WP
  */
 function cidweb_modifie_requete_principal( $query ) {
-    if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
-      $query->set( 'category_name', 'note4w4' );
-      $query->set( 'orderby', 'title' );
-      $query->set( 'order', 'ASC' );
+    if ( 
+        $query->is_home() // si page d'accueil
+        && $query->is_main_query() //si requete principale
+        && ! is_admin() ) { // non tableau de bord
+      $query->set( 'category_name', 'note-wp' ); // filtre les articles de categorie
+      $query->set( 'orderby', 'title' ); // trie selon le type
+      $query->set( 'order', 'ASC' ); // en ordre ascendant
       }
      }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
