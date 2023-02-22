@@ -1,0 +1,12 @@
+.blockflex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+.blockflex article {
+    border: 1px solid #aaa;
+    flex: 1 0 300px;
+    padding: 5px;
+    margin: 5px;
+  }
+  
