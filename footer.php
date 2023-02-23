@@ -4,7 +4,7 @@
 */
 ?>
 <footer>
-<h3>Footer</h3>
+<h3>Tout droits réservés</h3>
 </footer>
 <?php wp_footer(); ?>
 </body>

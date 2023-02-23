@@ -15,6 +15,7 @@
             'menu' =>'entete',
             'container' => 'nav'
             ));?>    
+            <?= get_search_form(); ?>
         </section>
 
         <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1> <!-- H1 avec un lien a l'inter -->
