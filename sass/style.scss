@@ -24,7 +24,9 @@ body {
 
 footer{
     text-align: center;
-    
+}
+img{
+    float: left;
 }
 
  /* ------------------NORMALIZE */
@@ -40,4 +42,5 @@ footer{
  /* ------------------BASE */
  @import "base/heading";
  @import "base/markdown";
+ @import "recherche/markdown";
 
