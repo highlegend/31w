@@ -1,4 +1,17 @@
-.blocflex {
+.blocflex{
+  display : flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  article {
+      margin : 10px;
+      padding : 5px;
+      border : 1px solid #aaa;
+      flex: 1 0 300px;
+  }
+}
+
+//  FLEX BOX DE CHAT GPT
+/* .blocflex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -21,7 +34,7 @@
 
 .blocflex article:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+} */
 
 
 /* .blocflex {

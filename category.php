@@ -3,22 +3,26 @@
     Modèle category.php qui permet d'afficher une archive par categorie d'article
 */
 get_header(); ?>
-<main>
-    <code>category.php</code>
-    <section class="blocflex">
-
-    
-    <h3><!-- index.php --></h3>
-    <?php 
-    if (have_posts()):
-        while (have_posts()) : the_post(); ?>
-        <article>  
-            <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-           <p><?php echo wp_trim_words(get_the_excerpt(),4);?> </p>
-        </article>
-        <?php endwhile;
-    endif; ?>
-    </section>  
-</main> 
+<main class="site__main">
+   <section class="blocflex">
+      <?php
+      $category = get_queried_object();
+      $args = array(
+         'category_name' => $category->slug,
+         'orderby' => 'title',
+         'order' => 'ASC'
+      );
+      $query = new WP_Query( $args );
+      if ( $query->have_posts() ) :
+         while ( $query->have_posts() ) : $query->the_post(); ?>
+            <article>
+               <h2><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h2>
+               <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
+            </article>
+         <?php endwhile; ?>
+      <?php endif;
+      wp_reset_postdata();?>
+   </section>
+</main>
 <?php get_footer(); ?>
 

@@ -341,8 +341,9 @@ template {
   display: none;
 }
 
-_::before,
-*::after {
+/* Définition du box sizing */
+::before,
+::after {
   box-sizing: inherit;
 }
 
@@ -351,65 +352,46 @@ html {
 }
 
 /* ------------------COMPOSANT */
-.logommenu {
+.logomenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .menu-entete-container {
-  /* La classe pour englober tout le menu de navigation */
+  flex: 1;
 }
 .menu-entete-container .menu {
   display: flex;
-  list-style: none; /* Supprime le style de liste pour les éléments .menu */
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: auto;
 }
 .menu-entete-container .menu .menu-item {
-  /* La classe pour les éléments individuels de la liste de navigation */
-  margin-right: 20px;
-  padding-right: 10px;
+  flex: 1 0 50px;
 }
 .menu-entete-container .menu .menu-item a {
-  text-decoration: none; /* Supprime la décoration de soulignement de lien */
-  color: #333;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
+  padding: 3px 5px;
+  color: #555;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: #999; /* Applique un style de survol pour les liens */
-}
-.menu-entete-container .menu .menu-item:last-child {
-  margin-right: 0; /* Supprime la marge à droite pour le dernier élément de la liste de navigation */
+  color: #0f0;
 }
 
-/* .menu-entete-container {
-
- **** MENU DU PROF ****
-
-  .menu { //ul
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      list-style: none;
-
-      .menu-item{ //li
-
-          a{
-            padding: 3px 5px;
-            color: #555;
-          }
-          a:hover{
-            color: greenyellow;
-          }
-
-      }
-
-  }
-}
-
- */
 .blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blocflex article {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  flex: 1 0 300px;
+}
+
+/* .blocflex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -432,8 +414,7 @@ html {
 
 .blocflex article:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
+} */
 /* .blocflex {
     display: flex;
     justify-content: space-between;

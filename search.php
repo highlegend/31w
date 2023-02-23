@@ -1,4 +1,3 @@
-
 <?php
 /**
     Modèle search.php pour afficher les résultats de recherche
@@ -14,7 +13,7 @@ if (have_posts()):
         //the_permalink(); ?>
         <article>
         <h5><a href="<?php the_permalink(); ?>"><?= get_the_title();  ?> </a></h5>
-        <?= wp_trim_words(get_the_excerpt(), 4);?>
+        <?= wp_trim_words(get_the_excerpt(), 30);?>
         </article>
         <hr>
     <?php endwhile;

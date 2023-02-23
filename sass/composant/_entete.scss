@@ -1,66 +1,47 @@
-.site__entete{
+.site__entete {
 
 }
 
-.logommenu{
-    display: flex;
+.logomenu{
+    display:flex;
     justify-content: space-between;
     align-items: center;
+
 }
+
 
 
 .menu-entete-container {
-  /* La classe pour englober tout le menu de navigation */
-  
-  .menu {
-    display: flex; 
-    list-style: none; /* Supprime le style de liste pour les éléments .menu */ 
-    .menu-item {
-      /* La classe pour les éléments individuels de la liste de navigation */  
-      margin-right: 20px; 
-      padding-right: 10px; 
-      a {
-        text-decoration: none; /* Supprime la décoration de soulignement de lien */
-        color: #333; 
-        font-size: 16px; 
-        font-weight: bold; 
-        text-transform: uppercase; 
-        &:hover {
-          color: #999; /* Applique un style de survol pour les liens */
-        }
-      }
-      &:last-child {
-        margin-right: 0; /* Supprime la marge à droite pour le dernier élément de la liste de navigation */
-      }
+flex : 1;
+
+.menu { //ul 
+    display : flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left : auto;
+
+.menu-item { // li
+        flex : 1 0 50px;
+
+    a{
+        padding : 3px 5px;
+        color : #555;
     }
-  }
-} 
+    a:hover {
+        color : #0f0;
+    }
 
-
-  /* .menu-entete-container {
-
- **** MENU DU PROF ****
-
-  .menu { //ul
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      list-style: none;
-
-      .menu-item{ //li
-
-          a{
-            padding: 3px 5px;
-            color: #555;
-          }
-          a:hover{
-            color: greenyellow;
-          }
-
-      }
-
-  }
 }
 
- */
-   
+}
+
+
+}
+
+
+
+
+
+
+
