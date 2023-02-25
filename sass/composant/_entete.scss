@@ -1,4 +1,108 @@
-.site__entete {
+site__entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: navy;
+    }
+    
+    .logomenu{
+    flex: 1;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    }
+    
+    .menu-entete-container {
+    flex : 2;
+    background-color: #afc0d7;
+    margin: 10px;
+    padding: 10px;
+    }
+    
+    .menu {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .menu-item {
+    margin-left: 20px;
+    }
+    
+    a{
+    padding : 3px 5px;
+    color : black;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    color:navy;
+    }
+    
+    .recherche {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    }
+    
+    .recherche__input {
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    }
+    
+    .recherche__bouton {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    }
+    
+    .recherche__icone {
+    font-size: 1.2rem;
+    }
+
+/* MENU A DROITE GPT
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+
+    .menu-item {
+        flex: 0 0 auto;
+        margin: 0 10px;
+
+        a {
+            padding: 10px;
+            color: #1f2122;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            color: #fff;
+            background-color: #0f0;
+        }
+    }
+} */
+
+
+/*  .site__entete {
 
 }
 
@@ -36,8 +140,7 @@ flex : 1;
 
 }
 
-
-}
+}  */
 
 
 

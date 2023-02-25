@@ -16,11 +16,11 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 body {
-  background-color: rgb(174, 175, 179);
+  background-color: #d6dde8;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  color: #111cb0;
+  color: black;
 }
 
 footer {
@@ -352,45 +352,183 @@ html {
 }
 
 /* ------------------COMPOSANT */
-.logomenu {
+site__entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: navy;
+}
+
+.logomenu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .menu-entete-container {
-  flex: 1;
-}
-.menu-entete-container .menu {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin-left: auto;
-}
-.menu-entete-container .menu .menu-item {
-  flex: 1 0 50px;
-}
-.menu-entete-container .menu .menu-item a {
-  padding: 3px 5px;
-  color: #555;
-}
-.menu-entete-container .menu .menu-item a:hover {
-  color: #0f0;
+  flex: 2;
+  background-color: #afc0d7;
+  margin: 10px;
+  padding: 10px;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  margin-left: 20px;
+}
+
+a {
+  padding: 3px 5px;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: navy;
+}
+
+.recherche {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.recherche__input {
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.recherche__bouton {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+.recherche__icone {
+  font-size: 1.2rem;
+}
+
+/* MENU A DROITE GPT
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+
+    .menu-item {
+        flex: 0 0 auto;
+        margin: 0 10px;
+
+        a {
+            padding: 10px;
+            color: #1f2122;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            color: #fff;
+            background-color: #0f0;
+        }
+    }
+} */
+/*  .site__entete {
+
+}
+
+.logomenu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.menu-entete-container {
+flex : 1;
+
+.menu { //ul 
+    display : flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left : auto;
+
+.menu-item { // li
+        flex : 1 0 50px;
+
+    a{
+        padding : 3px 5px;
+        color : #555;
+    }
+    a:hover {
+        color : #0f0;
+    }
+
+}
+
+}
+
+}  */
 .blocflex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
 }
 .blocflex article {
-  margin: 10px;
-  padding: 5px;
-  border: 1px solid #aaa;
+  background-color: #afc0d7;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
   flex: 1 0 300px;
+  transition: all 0.3s ease;
+}
+.blocflex article:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #afc0d7;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
+/* FLEX DU PROF
+
+.blocflex{
+  display : flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  article {
+      margin : 10px;
+      padding : 5px;
+      border : 1px solid #aaa;
+      flex: 1 0 300px;
+  }
+} */
 /* .blocflex {
   display: flex;
   justify-content: space-between;
@@ -415,18 +553,44 @@ html {
 .blocflex article:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 } */
-/* .blocflex {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-.blocflex article {
-    border: 1px solid #aaa;
-    flex: 1 0 300px;
-    padding: 5px;
-    margin: 5px;
-  }
-   */
+.recherche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recherche__input {
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  margin-right: 0.5rem;
+  width: 200px;
+}
+.recherche__input:focus {
+  outline: none;
+  border-color: #1f2122;
+}
+.recherche__bouton {
+  background-color: #1f2122;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.recherche__bouton:hover {
+  background-color: #19aaf2;
+}
+.recherche__bouton__icone {
+  margin-right: 0.5rem;
+}
+
 /* ------------------BASE */
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);

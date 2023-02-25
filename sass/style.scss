@@ -15,11 +15,11 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 body {
-    background-color: rgb(174, 175, 179);
+    background-color: #d6dde8;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: #111cb0;
+    color: black;
 }
 
 footer{
@@ -29,6 +29,7 @@ img{
     float: left;
 }
 
+
  /* ------------------NORMALIZE */
  @import "normalize/normalize";
  @import "normalize/boxsizing";
@@ -36,6 +37,7 @@ img{
  /* ------------------COMPOSANT */
  @import "composant/entete";
  @import "composant/blockflex";
+ @import "composant/search";
 
 
 

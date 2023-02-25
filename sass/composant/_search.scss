@@ -1,0 +1,43 @@
+.recherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__input {
+      padding: 0.5rem;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #333;
+      margin-right: 0.5rem;
+      width: 200px;
+  
+      &:focus {
+        outline: none;
+        border-color: #1f2122;
+      }
+    }
+  
+    &__bouton {
+      background-color: #1f2122;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      padding: 0.5rem;
+  
+      &:hover {
+        background-color: #19aaf2;
+      }
+  
+      &__icone {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  
