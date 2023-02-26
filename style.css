@@ -17,7 +17,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 body {
   background-color: #d6dde8;
-  margin: 0;
   padding: 0;
   font-family: sans-serif;
   color: black;
@@ -50,7 +49,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0;
+  margin: 10px;
 }
 
 /**
@@ -398,7 +397,7 @@ html {
 
 .menu-item:hover a {
   /* Styles pour le lien dans l'élément du menu survolé */
-  color: black;
+  color: aliceblue;
 }
 
 a {
