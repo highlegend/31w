@@ -1,11 +1,12 @@
+/* Classe pour un bloc contenant plusieurs éléments disposés en flexbox */
 .blocflex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
- 
 
+  /* Classe pour chaque élément de type article dans le bloc */
   article {
     background-color: #afc0d7;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
@@ -13,17 +14,20 @@
     border-radius: 5px;
     flex: 1 0 300px;
     transition: all 0.3s ease;
+    text-transform: capitalize;
+    opacity: 80%;
 
-
+    /* Effet de survol pour chaque article */
     &:hover {
       transform: translateY(-5px);
       box-shadow: 2px 5px 10px rgba(0,0,0,0.2);
-      border: 2px solid #afc0d7;
+      outline: 3px solid navy;
       border-radius: 5px;
       text-decoration: none;
     }
   }
 }
+
 
 
 /* FLEX DU PROF

@@ -1,26 +1,31 @@
-site__entete {
+/* site__entete {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: navy;
-    }
-    
-    .logomenu{
+    } */
+
+.logomenu{
+    /* Styles pour le logo du menu */
     flex: 1;
     display:flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
-    }
+}
     
-    .menu-entete-container {
+.menu-entete-container {
+    /* Styles pour le conteneur de l'en-tête du menu */
     flex : 2;
     background-color: #afc0d7;
-    margin: 10px;
-    padding: 10px;
-    }
+    padding: 15px;
+    font-weight: bolder;
+    opacity: 60%;
+    border-radius: 15px;
+}
     
-    .menu {
+.menu {
+    /* Styles pour le menu */
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
@@ -28,38 +33,52 @@ site__entete {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    }
+}
     
-    .menu-item {
+.menu-item {
+    /* Styles pour chaque élément du menu */
     margin-left: 20px;
-    }
+    font-size:large;
+    text-transform: capitalize;
+    position: relative;
+}
     
-    a{
+.menu-item:hover a {
+    /* Styles pour le lien dans l'élément du menu survolé */
+    color: black;
+}
+    
+a{
+    /* Styles pour les liens */
     padding : 3px 5px;
     color : black;
     text-decoration: none;
-    }
+}
     
-    a:hover {
+a:hover {
+    /* Styles pour le lien survolé */
     color:navy;
-    }
-    
-    .recherche {
+}
+
+.recherche {
+    /* Styles pour la zone de recherche */
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-right: 20px;
-    }
-    
-    .recherche__input {
+}
+
+.recherche__input {
+    /* Styles pour l'input de la zone de recherche */
     margin: 0;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    }
-    
-    .recherche__bouton {
+}
+
+.recherche__bouton {
+    /* Styles pour le bouton de la zone de recherche */
     margin-left: 10px;
     padding: 5px;
     border-radius: 5px;
@@ -67,13 +86,16 @@ site__entete {
     background-color: #555;
     color: #fff;
     cursor: pointer;
-    }
-    
-    .recherche__icone {
-    font-size: 1.2rem;
-    }
+}
 
-/* MENU A DROITE GPT
+.recherche__icone {
+    /* Styles pour l'icône de la zone de recherche */
+    font-size: 1.2rem;
+}
+    
+
+
+/* MENU A DROITE 
 
 .menu {
     display: flex;

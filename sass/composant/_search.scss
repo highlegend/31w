@@ -1,43 +1,67 @@
+/* Définition de la classe ".recherche" */
 .recherche {
+    /* Affichage en flexbox */
     display: flex;
+    /* Centrage horizontal et vertical des éléments */
     justify-content: center;
     align-items: center;
-    
-    &__input {
-      padding: 0.5rem;
-      border: 2px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-      font-weight: 400;
-      color: #333;
-      margin-right: 0.5rem;
-      width: 200px;
-  
-      &:focus {
-        outline: none;
-        border-color: #1f2122;
-      }
+
+/* Style de l'élément ".recherche__input" */
+&__input {
+    /* Espacement intérieur */
+    padding: 0.5rem;
+    /* Bordure */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* Taille de police */
+    font-size: 1rem;
+    /* Poids de la police */
+    font-weight: 400;
+    /* Couleur du texte */
+    color: #333;
+    /* Marge à droite */
+    margin-right: 0.5rem;
+    /* Largeur de l'élément */
+    width: 200px;
+
+    /* Style de l'élément au focus */
+    &:focus {
+    outline: none;
+    border-color: #1f2122;
     }
-  
-    &__bouton {
-      background-color: #1f2122;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1rem;
-      padding: 0.5rem;
-  
-      &:hover {
-        background-color: #19aaf2;
-      }
-  
-      &__icone {
-        margin-right: 0.5rem;
-      }
+}
+
+/* Style de l'élément ".recherche__bouton" */
+&__bouton {
+    /* Couleur de fond */
+    background-color: #1f2122;
+    /* Suppression de la bordure */
+    border: none;
+    /* Arrondi des coins */
+    border-radius: 5px;
+    /* Couleur du texte */
+    color: #fff;
+    /* Curseur au survol */
+    cursor: pointer;
+    /* Affichage en flexbox */
+    display: flex;
+    /* Centrage horizontal et vertical des éléments */
+    justify-content: center;
+    align-items: center;
+    /* Taille de police */
+    font-size: 1rem;
+    /* Espacement intérieur */
+    padding: 0.5rem;
+
+    /* Style de l'élément au survol */
+    &:hover {
+    background-color: #ccc;
     }
-  }
-  
+
+    /* Style de l'élément ".recherche__icone" */
+    &__icone {
+    /* Marge à droite */
+    margin-right: 0.5rem;
+    }
+}
+}

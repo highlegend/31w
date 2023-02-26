@@ -1,1 +1,79 @@
-ul,ol{}
+/* Styles pour les listes non-ordonnées et ordonnées */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Styles pour les éléments de listes non-ordonnées */
+ul li {
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Style pour le marqueur des éléments de listes non-ordonnées */
+ul li:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* Styles pour les éléments de listes ordonnées */
+ol li {
+    counter-increment: step-counter;
+    padding-left: 30px;
+    position: relative;
+}
+
+/* Style pour le numérotation des éléments de listes ordonnées */
+ol li:before {
+    content: counter(step-counter) ".";
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+/* Styles pour les éléments de texte en gras */
+strong, b {
+    font-weight: bold;
+}
+
+/* Styles pour les éléments de texte en italique */
+em, i {
+    font-style: italic;
+}
+
+/* Styles pour les liens */
+a {
+    color: navy;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Styles pour les liens survolés */
+a:hover {
+    color: aliceblue;
+}
+
+/* Styles pour le texte en code */
+code {
+    font-family: Consolas, monospace;
+    background-color: #f8f8f8;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+/* Styles pour la ligne horizontale */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}

@@ -2,7 +2,7 @@
 /*
 Theme Name: 31w Eddy Martin
 Theme URI: https://github.com/eddytuto
-Author: Eddy Martin
+Author: Mehdi Said
 Author URI: https://eddytuto.ca
 Description: Introductin à la création d'un thème Wordpress
 Version: 1.0
@@ -23,12 +23,12 @@ body {
   color: black;
 }
 
-footer {
+h1 {
   text-align: center;
 }
 
-img {
-  float: left;
+footer {
+  text-align: center;
 }
 
 /* ------------------NORMALIZE */
@@ -352,14 +352,14 @@ html {
 }
 
 /* ------------------COMPOSANT */
-site__entete {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: navy;
-}
-
+/* site__entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: navy;
+    } */
 .logomenu {
+  /* Styles pour le logo du menu */
   flex: 1;
   display: flex;
   justify-content: flex-start;
@@ -368,13 +368,17 @@ site__entete {
 }
 
 .menu-entete-container {
+  /* Styles pour le conteneur de l'en-tête du menu */
   flex: 2;
   background-color: #afc0d7;
-  margin: 10px;
-  padding: 10px;
+  padding: 15px;
+  font-weight: bolder;
+  opacity: 60%;
+  border-radius: 15px;
 }
 
 .menu {
+  /* Styles pour le menu */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -385,20 +389,32 @@ site__entete {
 }
 
 .menu-item {
+  /* Styles pour chaque élément du menu */
   margin-left: 20px;
+  font-size: large;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.menu-item:hover a {
+  /* Styles pour le lien dans l'élément du menu survolé */
+  color: black;
 }
 
 a {
+  /* Styles pour les liens */
   padding: 3px 5px;
   color: black;
   text-decoration: none;
 }
 
 a:hover {
+  /* Styles pour le lien survolé */
   color: navy;
 }
 
 .recherche {
+  /* Styles pour la zone de recherche */
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -407,6 +423,7 @@ a:hover {
 }
 
 .recherche__input {
+  /* Styles pour l'input de la zone de recherche */
   margin: 0;
   padding: 5px;
   border-radius: 5px;
@@ -414,6 +431,7 @@ a:hover {
 }
 
 .recherche__bouton {
+  /* Styles pour le bouton de la zone de recherche */
   margin-left: 10px;
   padding: 5px;
   border-radius: 5px;
@@ -424,10 +442,11 @@ a:hover {
 }
 
 .recherche__icone {
+  /* Styles pour l'icône de la zone de recherche */
   font-size: 1.2rem;
 }
 
-/* MENU A DROITE GPT
+/* MENU A DROITE 
 
 .menu {
     display: flex;
@@ -493,12 +512,14 @@ flex : 1;
 }
 
 }  */
+/* Classe pour un bloc contenant plusieurs éléments disposés en flexbox */
 .blocflex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  /* Classe pour chaque élément de type article dans le bloc */
 }
 .blocflex article {
   background-color: #afc0d7;
@@ -507,11 +528,14 @@ flex : 1;
   border-radius: 5px;
   flex: 1 0 300px;
   transition: all 0.3s ease;
+  text-transform: capitalize;
+  opacity: 80%;
+  /* Effet de survol pour chaque article */
 }
 .blocflex article:hover {
   transform: translateY(-5px);
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
-  border: 2px solid #afc0d7;
+  outline: 3px solid navy;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -553,41 +577,66 @@ flex : 1;
 .blocflex article:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 } */
+/* Définition de la classe ".recherche" */
 .recherche {
+  /* Affichage en flexbox */
   display: flex;
+  /* Centrage horizontal et vertical des éléments */
   justify-content: center;
   align-items: center;
+  /* Style de l'élément ".recherche__input" */
+  /* Style de l'élément ".recherche__bouton" */
 }
 .recherche__input {
+  /* Espacement intérieur */
   padding: 0.5rem;
+  /* Bordure */
   border: 2px solid #ccc;
   border-radius: 5px;
+  /* Taille de police */
   font-size: 1rem;
+  /* Poids de la police */
   font-weight: 400;
+  /* Couleur du texte */
   color: #333;
+  /* Marge à droite */
   margin-right: 0.5rem;
+  /* Largeur de l'élément */
   width: 200px;
+  /* Style de l'élément au focus */
 }
 .recherche__input:focus {
   outline: none;
   border-color: #1f2122;
 }
 .recherche__bouton {
+  /* Couleur de fond */
   background-color: #1f2122;
+  /* Suppression de la bordure */
   border: none;
+  /* Arrondi des coins */
   border-radius: 5px;
+  /* Couleur du texte */
   color: #fff;
+  /* Curseur au survol */
   cursor: pointer;
+  /* Affichage en flexbox */
   display: flex;
+  /* Centrage horizontal et vertical des éléments */
   justify-content: center;
   align-items: center;
+  /* Taille de police */
   font-size: 1rem;
+  /* Espacement intérieur */
   padding: 0.5rem;
+  /* Style de l'élément au survol */
+  /* Style de l'élément ".recherche__icone" */
 }
 .recherche__bouton:hover {
-  background-color: #19aaf2;
+  background-color: #ccc;
 }
 .recherche__bouton__icone {
+  /* Marge à droite */
   margin-right: 0.5rem;
 }
 
@@ -638,4 +687,164 @@ h6 {
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* Styles pour les listes non-ordonnées et ordonnées */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Styles pour les éléments de listes non-ordonnées */
+ul li {
+  padding-left: 20px;
+  position: relative;
+}
+
+/* Style pour le marqueur des éléments de listes non-ordonnées */
+ul li:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Styles pour les éléments de listes ordonnées */
+ol li {
+  counter-increment: step-counter;
+  padding-left: 30px;
+  position: relative;
+}
+
+/* Style pour le numérotation des éléments de listes ordonnées */
+ol li:before {
+  content: counter(step-counter) ".";
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+/* Styles pour les éléments de texte en gras */
+strong, b {
+  font-weight: bold;
+}
+
+/* Styles pour les éléments de texte en italique */
+em, i {
+  font-style: italic;
+}
+
+/* Styles pour les liens */
+a {
+  color: navy;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Styles pour les liens survolés */
+a:hover {
+  color: aliceblue;
+}
+
+/* Styles pour le texte en code */
+code {
+  font-family: Consolas, monospace;
+  background-color: #f8f8f8;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+/* Styles pour la ligne horizontale */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+/* Styles pour les listes non-ordonnées et ordonnées */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Styles pour les éléments de listes non-ordonnées */
+ul li {
+  padding-left: 20px;
+  position: relative;
+}
+
+/* Style pour le marqueur des éléments de listes non-ordonnées */
+ul li:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Styles pour les éléments de listes ordonnées */
+ol li {
+  counter-increment: step-counter;
+  padding-left: 30px;
+  position: relative;
+}
+
+/* Style pour le numérotation des éléments de listes ordonnées */
+ol li:before {
+  content: counter(step-counter) ".";
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+/* Styles pour les éléments de texte en gras */
+strong, b {
+  font-weight: bold;
+}
+
+/* Styles pour les éléments de texte en italique */
+em, i {
+  font-style: italic;
+}
+
+/* Styles pour les liens */
+a {
+  color: navy;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Styles pour les liens survolés */
+a:hover {
+  color: aliceblue;
+}
+
+/* Styles pour le texte en code */
+code {
+  font-family: Consolas, monospace;
+  background-color: #f8f8f8;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+/* Styles pour la ligne horizontale */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
 }/*# sourceMappingURL=style.css.map */
