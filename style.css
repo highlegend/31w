@@ -699,6 +699,8 @@ ul, ol {
 ul li {
   padding-left: 20px;
   position: relative;
+  font-size: large;
+  text-transform: capitalize;
 }
 
 /* Style pour le marqueur des éléments de listes non-ordonnées */
@@ -766,6 +768,14 @@ hr {
   height: 1px;
   background-color: #ccc;
   margin: 20px 0;
+}
+
+p {
+  text-transform: capitalize;
+  font-size: larger;
+  font-weight: bold;
+  line-height: 1.5; /* hauteur de ligne de 1,5 fois la taille de la police */
+  word-spacing: 0.2em; /* espace horizontal de 0,2em entre chaque mot */
 }
 
 /* Styles pour les listes non-ordonnées et ordonnées */
@@ -779,6 +789,8 @@ ul, ol {
 ul li {
   padding-left: 20px;
   position: relative;
+  font-size: large;
+  text-transform: capitalize;
 }
 
 /* Style pour le marqueur des éléments de listes non-ordonnées */
@@ -846,4 +858,12 @@ hr {
   height: 1px;
   background-color: #ccc;
   margin: 20px 0;
+}
+
+p {
+  text-transform: capitalize;
+  font-size: larger;
+  font-weight: bold;
+  line-height: 1.5; /* hauteur de ligne de 1,5 fois la taille de la police */
+  word-spacing: 0.2em; /* espace horizontal de 0,2em entre chaque mot */
 }/*# sourceMappingURL=style.css.map */
