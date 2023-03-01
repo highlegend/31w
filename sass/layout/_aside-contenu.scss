@@ -35,7 +35,7 @@ Mise en Page avec display: grid
     row-gap: 50px;
 
     @media screen and (min-width: 1000px /* point de cassure */) {
-      grid-template-columns: 20% auto; /* la 1ier colonne va utiliser 20% et la deuxieme va sajuster */
+      grid-template-columns: 30% auto; /* la 1ier colonne va utiliser 20% et la deuxieme va sajuster */
       grid-template-areas:
       "header header"
       "aside main"
