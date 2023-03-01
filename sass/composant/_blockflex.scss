@@ -8,7 +8,7 @@
 
   /* Classe pour chaque élément de type article dans le bloc */
   article {
-    background-color: #afc0d7;
+    background-color: #FDFFEC;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     padding: 20px;
     border-radius: 5px;
@@ -21,7 +21,7 @@
     &:hover {
       transform: translateY(-5px);
       box-shadow: 2px 5px 10px rgba(0,0,0,0.2);
-      outline: 3px solid navy;
+      outline: 3px solid #7A0708;
       border-radius: 5px;
       text-decoration: none;
     }

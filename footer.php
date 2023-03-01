@@ -3,7 +3,7 @@
 * Template footer.php
 */
 ?>
-<footer>
+<footer class="site__footer">
 <h3>Tout droits réservés</h3>
 </footer>
 <?php wp_footer(); ?>

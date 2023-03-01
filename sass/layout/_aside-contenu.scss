@@ -4,7 +4,7 @@ Mise en Page avec display: grid
 .site__entete {
     grid-area: header;
     padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: antiquewhite;
+    background-color: #7A0708;
   }
   
   .site__main {
@@ -14,13 +14,13 @@ Mise en Page avec display: grid
   
   .site__footer {
     grid-area: footer;
-    background-color: antiquewhite;
+    background-color: #7A0708;
   }
 
 
   .site__aside {
     grid-area: aside;
-    background-color: rgb(47, 148, 210);
+    background-color: #7A0708;
   }
 
   /* body ou une conteneur globale */
@@ -29,7 +29,16 @@ Mise en Page avec display: grid
     grid-template-columns: auto;
     grid-template-areas:
       "header"
+      "aside"
       "main"
       "footer";
     row-gap: 50px;
+
+    @media screen and (min-width: 1000px /* point de cassure */) {
+      grid-template-columns: 20% auto; /* la 1ier colonne va utiliser 20% et la deuxieme va sajuster */
+      grid-template-areas:
+      "header header"
+      "aside main"
+      "footer footer";
+    }
   }
