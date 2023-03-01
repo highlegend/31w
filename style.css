@@ -866,4 +866,37 @@ p {
   font-weight: bold;
   line-height: 1.5; /* hauteur de ligne de 1,5 fois la taille de la police */
   word-spacing: 0.2em; /* espace horizontal de 0,2em entre chaque mot */
+}
+
+/* ------------------ LAYOUT */
+/* 
+Mise en Page avec display: grid
+*/
+.site__entete {
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  background-color: antiquewhite;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: antiquewhite;
+}
+
+.site__aside {
+  grid-area: aside;
+  background-color: rgb(47, 148, 210);
+}
+
+/* body ou une conteneur globale */
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
+  row-gap: 50px;
 }/*# sourceMappingURL=style.css.map */
