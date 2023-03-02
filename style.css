@@ -369,7 +369,7 @@ html {
 .menu-entete-container {
   /* Styles pour le conteneur de l'en-tête du menu */
   flex: 2;
-  background-color: #FDFFEC;
+  background-color: #D2CBB8;
   padding: 15px;
   font-weight: bolder;
   opacity: 60%;
@@ -876,6 +876,7 @@ Mise en Page avec display: grid
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: #7A0708;
+  opacity: 75%;
 }
 
 .site__main {
@@ -891,6 +892,7 @@ Mise en Page avec display: grid
 .site__aside {
   grid-area: aside;
   background-color: #7A0708;
+  opacity: 85%;
 }
 
 /* body ou une conteneur globale */
