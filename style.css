@@ -893,6 +893,7 @@ Mise en Page avec display: grid
   grid-area: aside;
   background-color: #7A0708;
   opacity: 85%;
+  text-align: left;
 }
 
 /* body ou une conteneur globale */
