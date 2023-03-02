@@ -9,7 +9,7 @@ $titre_long = substr($titre, 7, -5); /* solution pas optimale, le prof vx quon t
 $duree = "90h";  /* il vx quon le fasse par nous mm aussi */
 ?>
 
-<article>
+<article class="blockflex__article">
     <h2><a href="<?php the_permalink(); ?>"> <?= $sigle; ?></a></h2>
     <h6><?= $titre_long ?></h6>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>

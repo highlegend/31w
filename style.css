@@ -539,6 +539,17 @@ flex : 1;
   text-decoration: none;
 }
 
+.blockflex__article {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  flex: 1 0 300px;
+}
+
+.blockflex__galerie {
+  flex: 1 0 100%;
+}
+
 /* FLEX DU PROF
 
 .blocflex{
