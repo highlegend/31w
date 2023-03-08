@@ -45,3 +45,19 @@ Mise en Page avec display: grid
       "footer footer";
     }
   }
+
+.no-aside {
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  row-gap: 50px;
+
+  @media screen and (min-width: 1000px /* point de cassure */) {
+    grid-template-columns: auto; /* on a une seule collone */
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  }
+}

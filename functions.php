@@ -67,5 +67,5 @@ function cidweb_modifie_requete_principal( $query ) {
     $title = wp_trim_words($title, 3, ' ... ');
     }
     return $title; 
-    }
+}
     add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);

@@ -378,8 +378,8 @@ html {
 
 .menu {
   /* Styles pour le menu */
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content:space-around; */
   flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
@@ -918,5 +918,16 @@ Mise en Page avec display: grid
   .site {
     grid-template-columns: 30% auto; /* la 1ier colonne va utiliser 20% et la deuxieme va sajuster */
     grid-template-areas: "header header" "aside main" "footer footer";
+  }
+}
+
+.no-aside {
+  grid-template-areas: "header" "main" "footer";
+  row-gap: 50px;
+}
+@media screen and (min-width: 1000px) {
+  .no-aside {
+    grid-template-columns: auto; /* on a une seule collone */
+    grid-template-areas: "header" "main" "footer";
   }
 }/*# sourceMappingURL=style.css.map */
