@@ -20,23 +20,8 @@
         <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1>  <!-- H1 avec un lien a l'inter -->
         <h2><?php  bloginfo('description'); ?></h2>
     </header>
-
-    <aside class="site__aside">  <!-- le Aside va safficher sur toutes les pages, parce qu'il est dans le header.php -->
-    <h3>Menu Secondaire</h3>
+<?php get_template_part("template-parts/aside"); ?>
     
-    <?php
-    $category = get_queried_object();
-    if (isset($category))
-    {
-        $lemenu = $category->slug;
-    }else{
-        $lemenu = "note-wp";
-    }
-    wp_nav_menu(array(
-        "menu" => $lemenu,
-        "container" => "nav"
-    )); ?>
-    </aside>
     
     
 

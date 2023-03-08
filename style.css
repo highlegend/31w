@@ -520,7 +520,7 @@ flex : 1;
   padding: 20px;
   /* Classe pour chaque élément de type article dans le bloc */
 }
-.blocflex article {
+.blocflex .article-principale {
   background-color: #FDFFEC;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -531,7 +531,7 @@ flex : 1;
   opacity: 80%;
   /* Effet de survol pour chaque article */
 }
-.blocflex article:hover {
+.blocflex .article-principale:hover {
   transform: translateY(-5px);
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
   outline: 3px solid #7A0708;

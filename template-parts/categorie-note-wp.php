@@ -9,7 +9,7 @@ $titre =substr( get_the_title(),3);
 //if(substr($titre,0,1) == "0")   /* dans le cas ou on veux enlever le premier caractere si il y a un 0 dans le debut du titre */
 ?>
 
-<article class="blockflex__article">
+<article class="article-principale blockflex__article">
     <h2><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h2>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
 </article>
