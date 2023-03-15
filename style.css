@@ -351,12 +351,13 @@ html {
 }
 
 /* ------------------COMPOSANT */
-/* site__entete {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: navy;
-    } */
+site__entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: navy;
+}
+
 .logomenu {
   /* Styles pour le logo du menu */
   flex: 1;
@@ -378,8 +379,8 @@ html {
 
 .menu {
   /* Styles pour le menu */
-  /* display: flex;
-  justify-content:space-around; */
+  display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
@@ -650,6 +651,31 @@ flex : 1;
   margin-right: 0.5rem;
 }
 
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  list-style-type: none;
+}
+.menu-cours-container .menu .menu-item a .cours__sigle {
+  padding: 3px;
+}
+.menu-cours-container .menu .menu-item a .cours__titre {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a .cours__titre {
+    display: block;
+  }
+}
+
 /* ------------------BASE */
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
@@ -916,7 +942,7 @@ Mise en Page avec display: grid
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 30% auto; /* la 1ier colonne va utiliser 20% et la deuxieme va sajuster */
+    grid-template-columns: 20% auto; /* la 1ier colonne va utiliser 20% et la deuxieme va sajuster */
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }
