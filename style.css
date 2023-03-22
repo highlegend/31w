@@ -613,67 +613,30 @@ flex : 1;
 .blocflex article:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 } */
-/* Définition de la classe ".recherche" */
-.recherche {
-  /* Affichage en flexbox */
-  display: flex;
-  /* Centrage horizontal et vertical des éléments */
-  justify-content: center;
-  align-items: center;
-  /* Style de l'élément ".recherche__input" */
-  /* Style de l'élément ".recherche__bouton" */
+.recherche article {
+  margin-bottom: 20px;
 }
-.recherche__input {
-  /* Espacement intérieur */
-  padding: 0.5rem;
-  /* Bordure */
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  /* Taille de police */
-  font-size: 1rem;
-  /* Poids de la police */
-  font-weight: 400;
-  /* Couleur du texte */
+.recherche article h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.recherche article h5 a {
+  text-decoration: none;
   color: #333;
-  /* Marge à droite */
-  margin-right: 0.5rem;
-  /* Largeur de l'élément */
-  width: 200px;
-  /* Style de l'élément au focus */
+  transition: color 0.2s ease-in-out;
 }
-.recherche__input:focus {
-  outline: none;
-  border-color: #1f2122;
+.recherche article h5 a:hover {
+  color: #007bff;
 }
-.recherche__bouton {
-  /* Couleur de fond */
-  background-color: #1f2122;
-  /* Suppression de la bordure */
-  border: none;
-  /* Arrondi des coins */
-  border-radius: 5px;
-  /* Couleur du texte */
-  color: #fff;
-  /* Curseur au survol */
-  cursor: pointer;
-  /* Affichage en flexbox */
-  display: flex;
-  /* Centrage horizontal et vertical des éléments */
-  justify-content: center;
-  align-items: center;
-  /* Taille de police */
-  font-size: 1rem;
-  /* Espacement intérieur */
-  padding: 0.5rem;
-  /* Style de l'élément au survol */
-  /* Style de l'élément ".recherche__icone" */
+.recherche article p {
+  font-size: 16px;
+  line-height: 1.5;
 }
-.recherche__bouton:hover {
-  background-color: #ccc;
-}
-.recherche__bouton__icone {
-  /* Marge à droite */
-  margin-right: 0.5rem;
+.recherche hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #ccc;
 }
 
 .menu-cours-container .menu {

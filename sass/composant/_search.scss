@@ -1,67 +1,32 @@
-/* Définition de la classe ".recherche" */
 .recherche {
-    /* Affichage en flexbox */
-    display: flex;
-    /* Centrage horizontal et vertical des éléments */
-    justify-content: center;
-    align-items: center;
+    article {
+        margin-bottom: 20px;
 
-/* Style de l'élément ".recherche__input" */
-&__input {
-    /* Espacement intérieur */
-    padding: 0.5rem;
-    /* Bordure */
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    /* Taille de police */
-    font-size: 1rem;
-    /* Poids de la police */
-    font-weight: 400;
-    /* Couleur du texte */
-    color: #333;
-    /* Marge à droite */
-    margin-right: 0.5rem;
-    /* Largeur de l'élément */
-    width: 200px;
+        h5 {
+            font-size: 24px;
+            margin-bottom: 10px;
 
-    /* Style de l'élément au focus */
-    &:focus {
-    outline: none;
-    border-color: #1f2122;
-    }
-}
+            a {
+                text-decoration: none;
+                color: #333;
+                transition: color 0.2s ease-in-out;
 
-/* Style de l'élément ".recherche__bouton" */
-&__bouton {
-    /* Couleur de fond */
-    background-color: #1f2122;
-    /* Suppression de la bordure */
-    border: none;
-    /* Arrondi des coins */
-    border-radius: 5px;
-    /* Couleur du texte */
-    color: #fff;
-    /* Curseur au survol */
-    cursor: pointer;
-    /* Affichage en flexbox */
-    display: flex;
-    /* Centrage horizontal et vertical des éléments */
-    justify-content: center;
-    align-items: center;
-    /* Taille de police */
-    font-size: 1rem;
-    /* Espacement intérieur */
-    padding: 0.5rem;
+                &:hover {
+                    color: #007bff;
+                }
+            }
+        }
 
-    /* Style de l'élément au survol */
-    &:hover {
-    background-color: #ccc;
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
     }
 
-    /* Style de l'élément ".recherche__icone" */
-    &__icone {
-    /* Marge à droite */
-    margin-right: 0.5rem;
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid #ccc;
     }
-}
 }
