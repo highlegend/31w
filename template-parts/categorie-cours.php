@@ -14,4 +14,5 @@ $duree = "90h";  /* il vx quon le fasse par nous mm aussi */
     <h6><?= $titre_long ?></h6>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
     <p><?= $duree ?></p>
+    <p> Professeur : <span class='nom-auteur'> <?= get_field('professeur') ?> </span></p>
 </article>
