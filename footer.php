@@ -3,27 +3,27 @@
 
   <div class="footer-columns">
     <div class="column">
-      <h4>Colonne 1</h4>
+      <h4>A propos</h4>
       <ul>
-        <li><a href="#">Lien 1</a></li>
-        <li><a href="#">Lien 2</a></li>
-        <li><a href="#">Lien 3</a></li>
+        <li><a href="#">Description</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Mission</a></li>
       </ul>
     </div>
     <div class="column">
-      <h4>Colonne 2</h4>
+      <h4>Membre</h4>
       <ul>
-        <li><a href="#">Lien 1</a></li>
-        <li><a href="#">Lien 2</a></li>
-        <li><a href="#">Lien 3</a></li>
+        <li><a href="#">Inscription</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Rejoindre l'equipe</a></li>
       </ul>
     </div>
     <div class="column">
-      <h4>Colonne 3</h4>
+      <h4>Reseaux Sociaux</h4>
       <ul>
-        <li><a href="#">Lien 1</a></li>
-        <li><a href="#">Lien 2</a></li>
-        <li><a href="#">Lien 3</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instragram</a></li>
+        <li><a href="#">Twitter</a></li>
       </ul>
     </div>
   </div>
