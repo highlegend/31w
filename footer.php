@@ -26,7 +26,7 @@
         <li><a href="#">Twitter</a></li>
       </ul>
     </div>
-    <?php dynamic_sidebar( 'sidebar' ); ?>
+    <?php dynamic_sidebar( 'footer-1' ); ?>
   </div>
 </footer>
 
