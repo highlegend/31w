@@ -1,4 +1,4 @@
-
+<!-- Ici on peut appeler nav, custom-logo -->
 <footer class="site__footer">
 
   <div class="footer-columns">
@@ -26,6 +26,7 @@
         <li><a href="#">Twitter</a></li>
       </ul>
     </div>
+    <?php dynamic_sidebar( 'sidebar' ); ?>
   </div>
 </footer>
 
