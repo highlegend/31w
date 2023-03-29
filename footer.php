@@ -12,7 +12,9 @@
     <div><?php dynamic_sidebar( 'pied-page-3' ); ?></div>
 </section> 
 <section class="footer__lien">
-    <div><?php wp_nav_menu(array('menu'=>'lien-externe')); ?></div>
+    <div><?php wp_nav_menu(array('menu'=>'lien-externe-1',
+                                         'container_class'=>'footer_lien_nav'
+                                                          )); ?></div>
     <div><?php ?></div>
     <div><?php ?></div>
 </section>
