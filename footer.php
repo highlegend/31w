@@ -1,5 +1,29 @@
 <!-- Ici on peut appeler nav, custom-logo -->
+
+<?php
+/**
+* Template footer.php
+*/
+?>
 <footer class="site__footer">
+<section class="footer__widget">   
+    <div><?php dynamic_sidebar( 'pied-page-1' ); ?></div>
+    <div><?php dynamic_sidebar( 'pied-page-2' ); ?></div>
+    <div><?php dynamic_sidebar( 'pied-page-3' ); ?></div>
+</section> 
+<section class="footer__lien">
+    <div><?php wp_nav_menu(array('menu'=>'lien-externe')); ?></div>
+    <div><?php ?></div>
+    <div><?php ?></div>
+</section>
+
+</footer>
+<?php wp_footer(); ?>
+</body>
+</html>
+
+<!-- MON ANCIEN FOOTER -->
+<!-- <footer class="site__footer">
 
   <div class="footer-columns">
     <div class="column">
@@ -26,7 +50,6 @@
         <li><a href="#">Twitter</a></li>
       </ul>
     </div>
-    <?php dynamic_sidebar( 'footer-1' ); ?>
   </div>
 </footer>
 
@@ -34,3 +57,4 @@
 </body>
 </html>
 
+ -->
