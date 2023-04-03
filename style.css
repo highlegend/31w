@@ -665,6 +665,7 @@ html {
 .site__footer {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 
 .footer__widget {
@@ -678,6 +679,8 @@ html {
 .footer__lien {
   display: flex;
   flex-direction: row;
+  margin: 5px;
+  padding: 5px;
 }
 .footer__lien div {
   flex: 1 0 33%;

@@ -15,8 +15,12 @@
     <div><?php wp_nav_menu(array('menu'=>'lien-externe-1',
                                          'container_class'=>'footer_lien_nav'
                                                           )); ?></div>
-    <div><?php ?></div>
-    <div><?php ?></div>
+    <div><?php wp_nav_menu(array('menu'=>'lien-externe-2',
+                                         'container_class'=>'footer_lien_nav'
+                                                          )); ?></div>
+    <div><?php wp_nav_menu(array('menu'=>'lien-externe-3',
+                                         'container_class'=>'footer_lien_nav'
+                                                          )); ?></div>
 </section>
 
 </footer>
