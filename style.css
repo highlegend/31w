@@ -571,7 +571,7 @@ html {
   padding: 0px;
 }
 
-.menu-cours-container .menu {
+.menu-cours-container .menu, .menu-note-wp-container .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -583,16 +583,30 @@ html {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu {
+    flex-direction: column;
+  }
+}
 .menu-cours-container .menu .menu-item {
   list-style-type: none;
 }
 
-.menu-cours-container .menu .menu-item a .cours_titre {
+.menu-cours-container .menu .menu-item a .cours__titre {
   display: none;
 }
 
 @media screen and (min-width: 1000px) {
-  .menu-cours-container .menu .menu-item a .cours_titre {
+  .menu-cours-container .menu .menu-item a .cours__titre {
+    display: block;
+  }
+}
+.menu-note-wp-container .menu .menu-item a .note__cours__titre {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu .menu-item a .note__cours__titre {
     display: block;
   }
 }
@@ -707,6 +721,26 @@ html {
 
     text-decoration: none;
   } */
+.menu__block .menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.menu__block .menu .menu-item {
+  border: 1px solid #aaa;
+  flex: 1 0 33%;
+}
+.menu__block .menu .menu-item a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.viewport {
+  min-height: 50vh;
+  padding: 0 3rem;
+  background-image: radial-gradient(circle at center, rgba(144, 144, 144, 0.1882352941), #979174);
+}
+
 /* ------------------BASE */
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
@@ -912,8 +946,8 @@ h2.h2-menu {
   flex: 1 0 300px;
 }
 
-.menu-note-wp-container a {
-  color: rgb(234, 222, 222);
+.menu-note-wp-container a:hover {
+  background-color: rgb(234, 222, 222);
 }
 
 #menu-note-wp li {

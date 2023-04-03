@@ -7,12 +7,18 @@
 
 <?php get_header(); ?>
 <main class="site__main">
-<?php
+<?php 
 if ( have_posts() ) : the_post(); ?>
+<!-- recupere image defini pour levenement -->
+<?php the_post_thumbnail( 'full' ); ?>
+
+<!-- pour mettre l'image plus petite -->
+<?php /* the_post_thumbnail( 'thumbnail' ); */ ?> 
+
 <h1><?= get_the_title(); ?></h1>
 <?php the_content();?>
 <p>L'adresse de l'evénement<?php the_field('adresse'); ?></p>
-<p>La date et l'heure de l'événement<?php the_field('date_et_heure_de_levenement'); ?></p>     
+<p>La date et l'heure de l'événement<?php the_field('date_de_levenement'); ?></p>     
 <?php endif;?>
 </main><!-- #main -->
 <?php

@@ -5,7 +5,16 @@
 get_header() ?>
 <main class="site__main">
     <!-- <code></code> -->
-
+    <section class="viewport">
+        <h1>Tp2</h1>
+        <h4>Auteur: Said Mehdi</h4>
+        <h4>Cours: 31w - Introduction a un gestionnaire de contenu</h4>
+        <?php wp_nav_menu(array(
+         "menu" => "evenement",
+         "container" => "nav",
+         "container_class" => "menu_bloc",
+        )) ?>
+    </section>
     <section class="blocflex">
         <?php 
         if (have_posts()):

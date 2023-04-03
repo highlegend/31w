@@ -75,29 +75,32 @@ function cidweb_modifie_requete_principal( $query ) {
 
 
 function perso_menu_item_title($title, $item, $args) {
-    // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
-//$sigle = $title = "";
-if($args->menu == 'cours') {
-// Modifier la longueur du titre en fonction de vos besoins
-$sigle = substr($title,4,3);
-$title = substr($title,7);
-$title = "<code class='cours__sigle'>".$sigle."</code>"."<p class='cours__titre'>".wp_trim_words($title, 2, ' ... ')."</p>";
+    // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu  
+  
+    if($args->menu == 'cours') {
+    // Modifier la longueur du titre en fonction de vos besoins
+    $sigle = substr($title, 4,3);
+    $title = substr($title, 7);
+    $title = "<div class='cours__sigle'>" . $sigle . "</div>" . 
+              "<p class='cours__titre'>" . wp_trim_words($title, 2, ' ... ') . "</p>";
+        
+    }
+    if($args->menu == 'note-wp') {
+        $index = strpos($title, "-");
+    if(substr($title,0,1) == '0')
+        $sigle = substr($title,1,$index-1);
+    else
+        $sigle = substr($title,0,$index);
+    $title = substr($title,$index+1);
+    $title = "<span class='note__cours__sigle'>".$sigle."</span>"." - <a class='note__cours__titre'>".wp_trim_words($title, 2, ' ... ')."</a>";
+       /*  if (substr($title,0,1) == '0') {
+            $title= substr($title,1);
+        } */
+    }
+    return  $title ;    
 }
-if($args->menu == 'note-cours') {
-// Modifier la longueur du titre en fonction de vos besoins
-$index = strpos($title, "-");
-if(substr($title,0,1) == '0')
-    $sigle = substr($title,1,$index-1);
-else
-    $sigle = substr($title,0,$index);
-$title = substr($title,$index+1);
-$title = "<code class='note__cours__sigle'>".$sigle."</code>"."<p class='note__cours__titre'>".wp_trim_words($title, 2, ' ... ')."</p>";
-}
-    
-return $title;
-}
-
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
+
 
 //////////////////////////////////////////////////////////////////Enreigistrement d'un sidebar
 
@@ -136,3 +139,5 @@ function enregistrer_sidebar() {
 
 }
 add_action( 'widgets_init', 'enregistrer_sidebar' );
+
+add_theme_support( 'post-thumbnails' );
