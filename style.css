@@ -739,9 +739,9 @@ html {
 }
 
 .viewport {
-  min-height: 50vh;
+  min-height: 40vh;
   padding: 0 3rem;
-  background-image: radial-gradient(circle at center, rgba(144, 144, 144, 0.1882352941), #979174);
+  background-image: radial-gradient(circle at center, rgba(0, 64, 153, 0.1882352941), #979174);
 }
 
 /* ------------------BASE */

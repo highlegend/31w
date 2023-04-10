@@ -6,9 +6,8 @@ get_header() ?>
 <main class="site__main">
     <!-- <code></code> -->
     <section class="viewport">
-        <h1>Tp2</h1>
-        <h4>Auteur: Said Mehdi</h4>
-        <h4>Cours: 31w - Introduction a un gestionnaire de contenu</h4>
+        <h1>Auteur: Said Mehdi</h1>
+        <h3>Cours: 31w - Introduction a un gestionnaire de contenu</h3>
         <?php wp_nav_menu(array(
          "menu" => "evenement",
          "container" => "nav",
