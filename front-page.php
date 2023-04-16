@@ -21,7 +21,7 @@ get_header() ?>
         echo '<a href="' . $url . '">';
 
         if (has_post_thumbnail($post_id)) {
-            $thumbnail = get_the_post_thumbnail($post_id, 'thumbnail');
+            $thumbnail = get_the_post_thumbnail($post_id, 'event_thumbnail');
             echo $thumbnail;
         }
 

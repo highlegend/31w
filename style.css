@@ -414,6 +414,9 @@ html {
 .single-event img {
   border-radius: 84px;
   border: 7px solid #FDFFEC;
+  height: 150px !important;
+  float: none !important;
+  width: 150px !important;
 }
 
 .site__main .wp-post-image {
