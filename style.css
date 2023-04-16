@@ -416,6 +416,13 @@ html {
   border: 7px solid #FDFFEC;
 }
 
+.site__main .wp-post-image {
+  height: 200px;
+  width: auto;
+  float: left;
+  margin-right: 16px;
+}
+
 .single-event h3 {
   color: black;
   font-size: 1.5vw;
