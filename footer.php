@@ -22,7 +22,15 @@
                                          'container_class'=>'footer_lien_nav'
                                                           )); ?></div>
 </section>
-
+<section>
+  <p>
+      Contactez-nous
+  </p>
+      2500 Boulevard Saint-Joseph Est
+      Montréal, QC H1Y 3G8
+      Tél : 514-123-4567
+      Email : info@monzoo.com
+</section>
 </footer>
 <?php wp_footer(); ?>
 </body>

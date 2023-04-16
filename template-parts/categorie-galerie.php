@@ -10,5 +10,6 @@ $titre =substr( get_the_title(),3);
 ?>
 
 <article class="blockflex_galerie">
+
     <?php the_content(); ?>
 </article>

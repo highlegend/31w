@@ -25,12 +25,11 @@
                 </label>
         <!-- </div> -->
         </section>
-        <section class="marge_entete">
-
+        
+        <!-- <section class="marge_entete">
         <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
         <h2 class="h2-menu"><?php  bloginfo('description'); ?></h2>
-        </section>
-
+        </section> -->
     </header>
 <?php 
     if (is_front_page() == false)
