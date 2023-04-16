@@ -1,33 +1,27 @@
 # TP1 (25 points)
 
-###### L\'objectif du TP1 :
+###### L\'objectif du TP2 :
 
-- Créer une extension
-- Continuer de faire progresser votre thème
-- Déployer votre projet sur le serveur **_Siteground_**
+- Créer une page d'accueil interactive utiliser le modèle « front-page.php »
+- Dynamiser la structure de menu mobile actuel
+- Améliorer votre structure de sidebar
+- Améliorer l'apparence du footer
+- Améliorer le modèle category-cours pour synthétiser l'offre de cours
+- Créer quelques modèles et templates
+- Continuer à faire progresser votre thème
+- Améliorer l'extension carrousel
+- Déployer votre projet sur le serveur Siteground
 
-###### Ce projet vous permettra d\'améliorer globalement votre site en y intégrant les éléments suivants:
+###### Ce projet vous permettra d'améliorer globalement votre site en y intégrant les éléments suivants::
 
-- Une extension carrousel permettant de visionner une galerie d\'images
-- Un pied de page
-- Un design de thème amélioré avec Sass et PHP
-- Amélioration des modèles:
-  - front-page.php
-  - single.php
-  - category.php
-  - search.php
-  - header.php
-  - footer.php
-- Une mise en page entièrement adaptative
-- Au niveau du design du site inspirez-vous des sites:
-  - https://www.scrum.org/
-  - https://cfe.dev/
+- Personnalisation de l'affichage d'un cours et de l'affichage d'une note de cours
+- Personnalisation et amélioration des archives (category.php)
+- Amélioration du design et du fonctionnement de l'entête du site
+- Une page d'accueil contenant des blocs annonçant les événements, les nouveaux articles ou tous autres contenus importants du site
 
 ###### Déroulement du projet
 
-> Les « **_commits_** » seront poussés dans le dépôt **_31w_** et **_31w-extension_** de votre github dans la branche **_tp1_**.
-> L\'ensemble des commits devra s\'étaler progressivement à partir de la journée de remise du devis jusqu\'à la remise finale du TP.
-> Un minimum de 10 commits pour le thème et pour l\'extension permettra d\'évaluer l\'évolution de votre projet
+Les « commits » seront poussés dans le dépôt 31w et 31w-extension de votre github dans la branche tp2. L'ensemble des commits devra s'étaler progressivement à partir de la journée de remise du devis jusqu'à la remise finale du TP. Un minimum de 10 commits pour le thème et pour l'extension permettra d'évaluer l'évolution de votre projet
 
 ###### Le serveur Siteground
 
@@ -36,29 +30,30 @@
 
 ---
 
-### L\'extension carrousel
+### L'extension carrousel
+Améliorer le design, le niveau d'interactivité et le fonctionnement du carrousel
 
-> L\'extension permettra de visualiser l\'ensemble des images d\'une galerie d\'images spécifiques. Une fois la galerie d\'images créée, elle pourra être liée à l\'extension. En cliquant sur une image de la galerie, celle-ci apparaîtra dans une boîte modale animée munie de plusieurs contrôles (boutons radio, flèches) de navigation permettant de passer d\'une image à l\'autre. Le carrousel devra être adaptatif.
-
-### Le pied de page: « **footer.php** »
-
-> La zone **_footer_** permettra d\'intégrer des liens conçus à partir de la fonctionnalité «menu» de Wordpress
+### Widget sidebar et footer
+Amélioration de la structure du « sitefooter » et de la zone « siteaside »
 
 ### Design amélioré
+La pagination globale « layout » du site et les différentes zones de la page: l'entête, les sidebars, les menus, le footer et la partie principale « site__main » de la page d'accueil et de toutes les pages devront être bien structurés, claire, originale et entièrement adaptative.
 
-> La pagination globale « layout » du site et les différentes zones de la page: l'entête, le footer et la partie principale « main » de la page devront être bien structurés claire, originale et entièrement adaptative.
 
-## Barème de correction sur 25 points
+### Barème de correction sur 25 points
 
-1. Organisation des commits sur Github minimum 10 commits pour l'extension et 10 commits pour le thème **_(5 points)_**
+1. Organisation des commits sur Github minimum 20 commits pour le thème (5 points)
+Minimum de 20 commits étalé sur deux semaines pour le thème
+    Messages clairs
+    Déploiement de votre site sur Siteground
+    Un readme.md pour le thème et pour l'extension:
+    Auteur,
+    Titre du projet,
+    Description générale
+    Les éléments que vous avez améliorés`
+Lien https vers votre site siteground
+2. La page d'accueil contient des blocs annonçant les nouveautés du site. La page est interactive et le design original. Le carrousel amélioré permet d'afficher la galerie de la page d'accueil (5 points)
+3. Organisation du sidebar et du footer, qualité du design et de l’intégration des widgets (5 points)
+4. Design général des pages simples (single.php, page.php, template-parts) et organisation de la programmation Sass, PHP (5 points)
 
-   - Adresse de votre github et votre nom devront apparaître clairement dans la page d'accueil de votre TP1
-   - Minimum de 10 commits étalés sur toute la durée du TP
-   - Messages clairs, spécifiques, préfixé et non redondant
-   - Une branche **tp1**
-   - Déploiement de votre site sur Siteground
-   - Un readme.md pour le thème et pour l'extension: auteur, titre du projet, description et lien vers votre site siteground
-
-2. Fonctionnement de l’extension carrousel, qualité du design, de l’intégration, des animations, organisation de la codification et adaptabilité **_(10 points)_**
-3. Organisation de l'entête, footer et partie principale. Qualité du design et de l’intégration des différents éléments de contenu. Notamment, les articles de notes de cours s'affichent de façon optimale. Les modèles: header.php, footer.php, category.php, front-page.php et single.php sont bien structurées et affichent l'information prévue. **_(5 points)_**
-4. Design général de la page et organisation de la programmation Sass, PHP. Organisation des menus, bouton burger pour afficher le menu principal pour les petits écrans. Adaptabilité générale du site. **_(5 points)_**
+5. Utilisation des templates de page, les blocs menu avec description et les champs personnalisés (5 points)
