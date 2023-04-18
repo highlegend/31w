@@ -25,7 +25,7 @@ get_header(); ?>
                     'container' => 'nav'
                 )); ?> 
 
-                <h2>Nos Choix de cours</h2>
+                <h2>Les notes de cours</h2>
                 <?php wp_nav_menu(array(
                     'menu' => 'note-wp',
                     'container' => 'nav'
