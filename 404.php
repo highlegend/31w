@@ -4,26 +4,21 @@
  */
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area pge-bg">
     <main id="main" class="site__main " role="main">
 
         <section class="error-404 not-found">
             <header class="page-header">
                 <h4 class="page-title">Erreur 404</h4>
                 <p>Page introuvable. Vous pouvez tentez une recherche</p>
-               <?php 
-                    function wpdocs_my_search_form( $form ) {
-                        $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
-                        <div><label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
-                        <input type="text" value="' . get_search_query() . '" name="s" id="s" />
-                        <input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
-                        </div>
-                        </form>';
-
-                        return $form;
-                    }
-                    add_filter( 'get_search_form', 'wpdocs_my_search_form' );
-                    ?>
+                <form class="recherche" role="search" method="get"  action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <label>
+                    <input class="recherche__input" type="search" class="search-field" placeholder="Recherche..." value="<?php echo get_search_query(); ?>" name="s" />
+                </label>
+                <button class="recherche__bouton" type="submit" class="search-submit">
+                    <span class="recherche__icone">&#x1F50D;</span>
+                </button>
+                </form>
             </header><!-- .page-header -->
         </section><!-- .error-404 -->
 

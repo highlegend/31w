@@ -7,7 +7,7 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-<body class="site <?= (is_front_page() ? "no-aside" : "");  ?> ">
+<body class="site <?= (is_front_page() ? "no-aside" : "");  ?> <?= (is_404() ? "no-aside 404-page" : "");  ?> ">
 <header class="site__entete">
         <section class="logomenu">
         <!-- <div class="menusearch"> -->
