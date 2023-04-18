@@ -871,7 +871,7 @@ html {
   width: 100%;
 }
 
-#menu-cours {
+#menu-cours, #menu-note-wp-1 {
   display: block;
   width: 80%;
   margin: 0 auto;
@@ -887,16 +887,20 @@ html {
   overflow: hidden;
 }
 
-#menu-cours li {
+#menu-cours li, #menu-note-wp-1 li {
   float: left;
-  margin-right: 20px;
+  margin: 10px 10px 10px 0;
 }
 
 #menu-cours li .cours__sigle {
   float: left;
 }
 
-#menu-cours li .cours__titre {
+#menu-note-wp-1 li a:nth-child(1) {
+  display: none;
+}
+
+#menu-cours li .cours__titre, #menu-note-wp-1 li .note__cours__titre {
   float: left;
   padding: 0;
   margin: 0;
@@ -905,6 +909,11 @@ html {
   color: #000080;
 }
 
+@media only screen and (max-width: 600px) {
+  #menu-cours li .cours__titre {
+    display: none;
+  }
+}
 /* ------------------BASE */
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
