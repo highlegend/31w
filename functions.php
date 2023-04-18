@@ -29,6 +29,8 @@ add_theme_support( 'custom-logo',  /* configurer le logo */
         register_nav_menus( array(
             'menu_entete' => 'Menu entête' , /*c'est un tableau association dont le cles pointent sur nom complet*/
             'menu_footer'  => 'Menu pied de page', /* a droite c'est la classe qui va s'inserer */
+            'cours'  => '404 Menu pied de page', /* a droite c'est la classe qui va s'inserer */
+            'note-wp'  => '404 Menu pied de page', /* a droite c'est la classe qui va s'inserer */
         ) );
     }
     add_action( 'after_setup_theme', 'enregistrement_des_menus', 0 );

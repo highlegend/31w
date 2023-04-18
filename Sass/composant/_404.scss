@@ -10,7 +10,15 @@
 }
 .pge-bg{
     background:url("https://aecweb2.sg-host.com/wp-content/uploads/2023/03/panda-1536x1024.webp") #FDFFEC no-repeat;
+    background-size: cover;
 }
 .pge-bg main{
-    background-color:#FDFFEC ;
+    background-color:rgba(253, 255, 236, 0.7) ;
+}
+.pge-bg .recherche{
+    width: 500px;
+    margin: 0 auto;
+}
+.pge-bg .recherche label{
+    width: 90%;
 }

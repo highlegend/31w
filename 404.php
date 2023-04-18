@@ -19,6 +19,12 @@ get_header(); ?>
                     <span class="recherche__icone">&#x1F50D;</span>
                 </button>
                 </form>
+
+                <?php wp_nav_menu(array(
+                    'menu' => 'cours',
+                    'container' => 'nav'
+                )); ?> 
+
             </header><!-- .page-header -->
         </section><!-- .error-404 -->
 
