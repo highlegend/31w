@@ -867,6 +867,44 @@ html {
   width: 90%;
 }
 
+.pge-bg .recherche label input {
+  width: 100%;
+}
+
+#menu-cours {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pge-bg h2 {
+  color: red;
+  text-align: center;
+}
+
+.pge-bg .menu-cours-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+#menu-cours li {
+  float: left;
+  margin-right: 20px;
+}
+
+#menu-cours li .cours__sigle {
+  float: left;
+}
+
+#menu-cours li .cours__titre {
+  float: left;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000080;
+}
+
 /* ------------------BASE */
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
