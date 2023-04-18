@@ -36,6 +36,9 @@
     {
         get_template_part("template-parts/aside");
     }
+    elseif(is_404()){
+        get_template_part("template-parts/asides");
+    }
 ?>
     
 

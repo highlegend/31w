@@ -1,4 +1,12 @@
+<?php
+if(is_404()==true){
+    echo '<aside style="display: none;" class="site__aside">';
+}
+else{
+?>
+
 <aside class="site__aside">  <!-- le Aside va safficher sur toutes les pages, parce qu'il est dans le header.php -->
+<?php } ?>
     <h3>Menu Secondaire</h3>
     
     <?php
